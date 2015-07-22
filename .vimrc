@@ -67,6 +67,7 @@ Plugin 'vim-scripts/gitignore'
 " Git
 Plugin 'tpope/vim-fugitive'
 Plugin 'int3/vim-extradite'
+Plugin 'airblade/vim-gitgutter'
 
 " Bars, panels, and files
 Plugin 'scrooloose/nerdtree'
@@ -83,6 +84,9 @@ Plugin 'michaeljsmith/vim-indent-object'
 
 " Allow pane movement to jump out of vim into tmux
 Plugin 'christoomey/vim-tmux-navigator'
+
+" Python
+Plugin 'klen/python-mode'
 
 " Haskell
 Plugin 'raichoo/haskell-vim'
