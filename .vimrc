@@ -103,6 +103,7 @@ Plug 'vim-scripts/gitignore'
 " Git
 Plug 'tpope/vim-fugitive'
 Plug 'int3/vim-extradite'
+Plug 'airblade/vim-gitgutter'
 
 " Bars, panels, and files
 Plug 'scrooloose/nerdtree'
@@ -120,6 +121,9 @@ Plug 'easymotion/vim-easymotion'
 
 " Allow pane movement to jump out of vim into tmux
 Plug 'christoomey/vim-tmux-navigator'
+
+" Python
+Plug 'klen/python-mode'
 
 " Haskell
 Plug 'neovimhaskell/haskell-vim', { 'for': 'haskell' }
