@@ -122,8 +122,15 @@ Plug 'easymotion/vim-easymotion'
 " Allow pane movement to jump out of vim into tmux
 Plug 'christoomey/vim-tmux-navigator'
 
+" Go
+Plug 'fatih/vim-go'
+
 " Python
 Plug 'klen/python-mode'
+
+" Clojure
+Plug 'guns/vim-clojure-static'
+Plug 'tpope/vim-fireplace'
 
 " Haskell
 Plug 'neovimhaskell/haskell-vim', { 'for': 'haskell' }
@@ -172,7 +179,7 @@ set cmdheight=1
 
 " Configure backspace so it acts as it should act
 set backspace=eol,start,indent
-set whichwrap+=<,>,h,l
+"set whichwrap+=<,>,h,l
 
 " Ignore case when searching
 set ignorecase
@@ -218,7 +225,7 @@ nnoremap <leader>ma :set mouse=a<cr>
 nnoremap <leader>mo :set mouse=<cr>
 
 " Default to mouse mode on
-set mouse=a
+set mouse=
 " }}}
 
 " Colors and Fonts {{{
@@ -269,7 +276,9 @@ endif
 set ffs=unix,dos,mac
 
 " Use large font by default in MacVim
-set gfn=Monaco:h19
+" set gfn=Monaco:h19
+" set gfn=D2Coding:h14
+set gfn=Source_Code_Pro:h14
 
 " Use powerline fonts for airline
 if !exists('g:airline_symbols')
@@ -334,7 +343,7 @@ set wrap "Wrap lines
 " Pretty unicode haskell symbols
 let g:haskell_conceal_wide = 1
 let g:haskell_conceal_enumerations = 1
-let hscoptions="𝐒𝐓𝐄𝐌xRtB𝔻w"
+let hscoptions="STEMxRtBDw"
 
 " Copy and paste to os clipboard
 nmap <leader>y "*y
